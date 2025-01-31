@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Form</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/add.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter movie name">    
+            </div>
+            <div>
+                <label for="story">Story:</label>
+                <textarea id="story" placeholder="Enter movie story"></textarea>    
+            </div>
+            <div>
+                <label for="director">Director:</label>
+                <input type="text" id="director" placeholder="Enter movie director">    
+            </div>
+            <div>
+                <label for="movie-type">Movie Type:</label>
+                <select name="movie-type" id="movie-type">
+                    <option value="action">action</option>
+                    <option value="romance">romance</option>
+                    <option value="crime">Crime</option>
+                </select>
+            </div>
+            <div>
+                <label for="stars">Stars:</label>
+                <input type="text" id="stars" placeholder="Enter movie stars">    
+            </div>
+            <div>
+                <label for="photo">Movie Photo:</label>
+                <input type="file" id="photo" accept="image/*">    
+            </div>
+
+            <button id="sub" type="button">Add</button>
+        </form>
+    </div>
+</body>
+</html>

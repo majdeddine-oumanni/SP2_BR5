@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input >
+        <button type="button">submit</button>
+    </form>
+    <div id="error"></div>
+    <script>
+        const input = document.querySelector('input');
+        const sub = document.querySelector('button');
+        sub.addEventListener('click', ()=>{
+            if(input.value == ""){
+                document.getElementById('error').innerHTML = `<p>Error</p>`
+            }else{
+                document.getElementById('error').innerHTML = "";
+            }
+        })
+    </script>
+</body>
+</html>

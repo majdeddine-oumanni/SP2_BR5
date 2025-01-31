@@ -1,0 +1,46 @@
+.container-fluid{
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    position: fixed;
+    top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100px;
+  }
+  #logo-cont{
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.1);
+    padding-right: 20px;
+    padding-left: 20px;
+    color: rgb(255, 255, 0);
+    border: 1px solid;
+    
+  }
+  #logo{
+    width: 70px;
+  }
+  .dropdown-item{
+    cursor: pointer;
+    transition: 0.1s;
+  }
+  .dropdown-item:hover{
+    color: grey;
+  }
+  .form-control{
+    width: 400px;
+  }
+  .btn{
+    width: 100px;
+  }
+  .navbar-nav .nav-item .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #f8f9fa !important; 
+}
+
+
+  

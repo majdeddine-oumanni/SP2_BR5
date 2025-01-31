@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge7</title>
+    <style>
+        p{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <p>year </p><span id="year"></span>
+    <p>day </p><span id="day"></span>
+    <script>
+        const d = new Date();
+        let year = d.getUTCFullYear();
+        document.getElementById("year").innerHTML = year;
+        let day = d.getUTCDate();
+        document.getElementById("day").innerHTML = day;
+
+    </script>
+</body>
+</html>
