@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="styles/details.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">MyMovies</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="movie-details">
+            <img id="movie-image" src="" alt="Movie Poster">
+            <div class="details-text">
+                <h1 id="movie-name"></h1>
+                <p><strong>Director:</strong> <span id="movie-director"></span></p>
+                <p><strong>Genre:</strong> <span id="movie-genre"></span></p>
+                <p><strong>Story:</strong> <span id="movie-story"></span></p>
+                <p><strong>Rating:</strong> <span id="movie-rating"></span></p>
+                <p><strong>Stars:</strong> <span id="movie-stars"></span></p>
+                <button id="update-movie" class="btn btn-warning">Update Movie</button>
+                <button id="delete-movie" class="btn btn-danger">Delete Movie</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="update-popup" class="popup">
+        <div class="popup-content">
+            <h2>Update Movie</h2>
+            <label>Name: <input type="text" id="update-name"></label>
+            <label>Director: <input type="text" id="update-director"></label>
+            <label>Genre: <input type="text" id="update-genre"></label>
+            <label>Story: <textarea id="update-story"></textarea></label>
+            <label>Rating: <input type="number" id="update-rating" min="0" max="10"></label>
+            <button id="save-update" class="btn btn-success">Save</button>
+            <button id="close-popup" class="btn btn-secondary">Cancel</button>
+        </div>
+    </div>
+
+    <script src="scripts/details.js"></script>
+</body>
+</html>

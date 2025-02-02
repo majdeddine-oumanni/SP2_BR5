@@ -58,13 +58,17 @@
                 </select>
             </div>
             <div>
+                <label for="rating">Rating:</label>
+                <input type="number" id="rating" placeholder="Enter movie IMDB rating">    
+            </div>
+            <div>
                 <label for="stars">Stars:</label>
                 <input type="text" id="stars" placeholder="Enter movie stars">   
-                <button id="add-button">Add</button> 
+                <button id="add-button" type="button">Add</button> 
             </div>
             <div>
                 <label for="photo" id="movie-file">Movie Photo:</label>
-                <input type="file" id="photo" accept="image/*">    
+                <input type="file" id="photo" accept="image/jpeg, image/png, image/jpg">    
             </div>
 
             <button id="sub" type="button">Submit</button>
