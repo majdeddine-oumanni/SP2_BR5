@@ -33,6 +33,14 @@
   }
   .btn{
     width: 100px;
+    color: whitesmoke;
+    border-color: rgb(177, 177, 0);
+  }
+  .btn:hover{
+    background-color: rgb(177, 177, 0);
+    color: white;
+    font-size: 16px;
+    border-color: white;
   }
   .navbar-nav .nav-item .nav-link {
     color: white !important;
